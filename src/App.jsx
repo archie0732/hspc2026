@@ -191,7 +191,13 @@ function App() {
 
       <main>
         {/* Hero Section */}
-        <section id="home" className="hero fade-in">
+        <section 
+          id="home" 
+          className="hero fade-in"
+          style={{ 
+            backgroundImage: `linear-gradient(to right, rgba(10, 37, 64, 0.15), rgba(10, 37, 64, 0.5)), url(${data.contest.bannerBg})` 
+          }}
+        >
           <div className="hero-content">
             <div className="hero-badge">{data.contest.abbr}</div>
             <h1 className="hero-title">
@@ -504,8 +510,8 @@ function App() {
               <div className="location-map-box">
                 <h4 className="map-box-title">靜宜大學校園導覽圖</h4>
                 <div className="campus-map-wrapper">
-                  <a href="/school_map.jpg" target="_blank" rel="noopener noreferrer" title="點擊查看大圖">
-                    <img src="/school_map.jpg" alt="靜宜大學校園導覽圖" className="campus-map-img" />
+                  <a href="./school_map.jpg" target="_blank" rel="noopener noreferrer" title="點擊查看大圖">
+                    <img src="./school_map.jpg" alt="靜宜大學校園導覽圖" className="campus-map-img" />
                   </a>
                 </div>
               </div>

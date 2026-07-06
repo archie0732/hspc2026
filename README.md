@@ -1,16 +1,133 @@
-# React + Vite
+# 2026 HSPC 全國高中職程式設計競賽網頁維護手冊
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+本網頁使用 **React** + **Vite** 開發，並託管於 **GitHub Pages**。
+為了方便主辦單位（非技術背景人員）能輕鬆更新網頁內容，所有網頁上顯示的文字、日期、報名連結及考題，都已經整理在一個簡單的資料檔案中。
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 快速更新網頁內容（最推薦，免安裝任何軟體）
 
-## React Compiler
+主辦單位的人員可以直接在 **GitHub 官方網站**上編輯內容，送出後網頁就會**自動更新**（通常需等待 1-2 分鐘）：
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. 登入 GitHub 帳號並前往該專案頁面。
+2. 依序點擊資料夾路徑：`src` ➡️ `data` ➡️ 點擊 **`contestData.json`** 檔案。
+3. 點擊右上角的 **✏️（編輯此檔案，Edit this file）** 按鈕。
+4. 修改您要調整的欄位內容（請參考下方[欄位填寫說明](#欄位填寫說明)）。
+5. 修改完畢後，點選右上角的綠色按鈕 **Commit changes...（提交變更）**。
+6. 在彈出視窗中，點擊 **Commit changes** 送出。
+7. 系統會自動啟動後台建置（GitHub Actions），約 1 分鐘後，您的網站即會更新完成！
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 欄位填寫說明
+
+`contestData.json` 內部的結構為 JSON 格式。請注意以下兩點基本語法，避免程式建置出錯：
+* **引號**：所有文字內容都必須用**英文雙引號 `""`** 包起來，例如 `"2026"`。
+* **逗號**：兩個欄位之間必須使用**英文逗號 `,`** 隔開，但**最後一項的後面「不能」加逗號**。
+
+以下是 `contestData.json` 內各區塊與欄位的詳細說明：
+
+### 1. `contest`（競賽基本資訊）
+| 欄位名稱 | 意思 | 範例與填寫建議 |
+| :--- | :--- | :--- |
+| `"year"` | 競賽西元年份 | `"2026"` |
+| `"rocYear"` | 競賽民國年份 | `"115"` |
+| `"abbr"` | 競賽英文簡稱 | `"2026 HSPC"` |
+| `"title"` | 競賽中文名稱 | `"全國高中職程式設計競賽"` |
+| `"englishTitle"` | 競賽英文名稱 | `"High School Programming Contest"` |
+| `"date"` | 競賽日期 (標準格式) | `"2026-08-26"` |
+| `"dateDisplay"` | 網頁上顯示的競賽日期 | `"115年08月26日(星期三)"` |
+| `"purpose"` | 競賽目的介紹 | `"為擴大全國高中(職)學生對於程式設計競賽...，特舉辦本競賽。"` |
+| `"bannerBg"` | 首頁橫幅背景圖片路徑 | 預設為 `"./school_background.jpg"`。若有更換，請將圖片放入 `public` 資料夾，並在此更新檔名。 |
+
+### 2. `contestInfo`（競賽規格說明）
+| 欄位名稱 | 意思 | 範例與填寫建議 |
+| :--- | :--- | :--- |
+| `"target"` | 參加對象限制 | `"全國高中(職)學生"` |
+| `"teamRule"` | 組隊規則說明 | `"每隊三位成員"` |
+| `"languages"` | 競賽支援程式語言 | `"C/C++, JAVA, PYTHON, C#"` |
+| `"workshop"` | 工作坊行程說明 | `"8/24-8/25 競技程式工作坊"` |
+
+### 3. `registration`（報名相關資訊）
+| 欄位名稱 | 意思 | 範例與填寫建議 |
+| :--- | :--- | :--- |
+| `"period"` | 報名期間 | `"即日起 ~ 115年7月23日 (四) 止"` |
+| `"formLink"` | 線上報名表單連結 | 請填寫 Google 表單等報名網址，例如 `"https://docs.google.com/forms/..."` |
+| `"fee"` | 報名費用 | `"免費報名"` |
+| `"groups"` | 報名組別清單 (陣列) | 內含組別物件。如需新增組別，可複製大括弧 `{}` 區塊。<br>• `"name"`: 組別名稱，例如 `"高中職新星組"`。<br>• `"link"`: 專屬報名連結。<br>• `"status"`: 狀態，例如 `"開放中"` 或 `"已截止"`。 |
+
+### 4. `contact`（聯絡我們資訊）
+| 欄位名稱 | 意思 | 範例與填寫建議 |
+| :--- | :--- | :--- |
+| `"email"` | 賽事官方聯絡信箱 | `"pu20700@gm.pu.edu.tw"` |
+| `"collegeEmail"` | 資訊學院信箱 (頁尾顯示) | `"pu20700@gm.pu.edu.tw"` |
+| `"phone"` | 聯絡電話與分機 | `"(04)26328001 轉 18001 , 18007"` |
+| `"address"` | 學校地址 | `"43301 台中市沙鹿區台灣大道七段200號"` |
+| `"locationName"` | 競賽教室地點名稱 | `"靜宜大學 資訊處 任垣樓 任120"` |
+| `"office"` | 辦公室位置 | `"任垣樓 任120"` |
+
+### 5. `organizers` / `coOrganizers`（主辦與協辦單位）
+* **`organizers`**（主辦單位，含標誌）：
+  * `"name"`: 單位名稱。
+  * `"logo"`: 標誌圖片路徑（圖片須放在 `public` 資料夾下，並以 `./` 開頭，例如 `"./provident_university.png"`）。
+* **`coOrganizers`**（協辦單位）：
+  * 僅需填寫 `"name"`（例如 `{"name": "靜宜大學資訊管理學系"}`），多個單位以逗號隔開。
+
+### 6. `sponsors`（贊助廠商）
+* `"name"`: 贊助商名稱（例如 `"SYSTEX 精誠資訊"`）。
+* `"logo"`: 標誌圖片路徑。圖片需放在 `public` 資料夾中並以 `./` 開頭（例如 `"./systex.png"`）。若暫無圖片，可留空 `""`，網頁會自動顯示「標誌徵集中」之文字框。
+
+### 7. `news`（最新消息清單）
+為陣列結構，每筆最新消息包含：
+* `"id"`: 唯一識別碼，請依序遞增填寫數字（例如 `1`, `2`, `3`）。
+* `"date"`: 公告日期，格式為 `"YYYY-MM-DD"`。
+* `"title"`: 消息標題。
+* `"content"`: 消息詳細內文。
+* `"url"`: 相關連結。若無連結，請保留雙引號留空 `""`，此時按鈕將不會出現在網頁上。
+
+### 8. `pastProblems`（歷屆考題）
+列出歷屆考題以便參賽者下載：
+* `"year"`: 考題年份（如 `"2024"`）。
+* `"title"`: 顯示在網頁上的標題文字（例如 `"第十四屆 全國私立大專校院程式競賽 2024 考題"`）。
+* `"link"`: 雲端硬碟或其他下載連結。
+
+### 9. `faq`（常見問題 Q&A）
+* **目前狀態**：已預先清空為 `[]`（空陣列），且網頁會自動顯示 **「常見問題正在研擬中，敬請期待！」** 的精緻字樣。
+* **如何啟用與新增**：
+  當您與雇主討論完畢，想要新增問答時，請將 `[]` 替換為以下格式（多筆資料請用逗號隔開）：
+  ```json
+  "faq": [
+    {
+      "question": "參賽資格有何限制？",
+      "answer": "凡全國高中職在學學生（含應屆畢業生與自學生）皆可組隊報名參賽。"
+    },
+    {
+      "question": "報名費用是多少？",
+      "answer": "本競賽完全免費。"
+    }
+  ]
+  ```
+
+---
+
+## 本機開發與建置（技術人員參考）
+
+如果您需要修改網頁的版面、CSS 樣式或 React 元件：
+
+### 1. 安裝套件
+請於專案根目錄執行：
+```bash
+npm install
+```
+
+### 2. 本機啟動開發伺服器
+本機測試與即時預覽：
+```bash
+npm run dev
+```
+
+### 3. 建置生產環境代碼
+手動打包專案（建置結果會輸出在 `dist` 資料夾）：
+```bash
+npm run build
+```

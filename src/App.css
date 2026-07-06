@@ -159,7 +159,6 @@
 /* Hero Section */
 .hero {
   position: relative;
-  background-image: linear-gradient(to right, rgba(10, 37, 64, 0.15), rgba(10, 37, 64, 0.5)), url('/school_background.jpg');
   background-size: cover;
   background-position: center;
   color: #ffffff;

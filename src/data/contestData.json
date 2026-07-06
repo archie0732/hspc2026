@@ -8,7 +8,7 @@
     "date": "2026-08-26",
     "dateDisplay": "115年08月26日(星期三)",
     "purpose": "為擴大全國高中(職)學生對於程式設計競賽的參與度以及提升其程式設計能力，特舉辦本競賽。",
-    "bannerBg": "/school_background.jpg"
+    "bannerBg": "./school_background.jpg"
   },
   "contestInfo": {
     "target": "全國高中(職)學生",
@@ -40,11 +40,11 @@
   "organizers": [
     {
       "name": "靜宜大學資訊學院",
-      "logo": "/college_of_computer_and_information.gif"
+      "logo": "./college_of_computer_and_information.gif"
     },
     {
       "name": "靜宜大學資訊工程學系",
-      "logo": "/provident_university.png"
+      "logo": "./provident_university.png"
     }
   ],
   "coOrganizers": [
@@ -61,7 +61,7 @@
   "sponsors": [
     {
       "name": "SYSTEX 精誠資訊",
-      "logo": "/systex.png"
+      "logo": "./systex.png"
     }
   ],
   "news": [
