@@ -1,0 +1,171 @@
+{
+  "contest": {
+    "year": "2026",
+    "rocYear": "115",
+    "abbr": "2026 HSPC",
+    "title": "全國高中職程式設計競賽",
+    "englishTitle": "High School Programming Contest",
+    "date": "2026-08-26",
+    "dateDisplay": "115年08月26日(星期三)",
+    "purpose": "為擴大全國高中(職)學生對於程式設計競賽的參與度以及提升其程式設計能力，特舉辦本競賽。",
+    "bannerBg": "/school_background.jpg"
+  },
+  "contestInfo": {
+    "target": "全國高中(職)學生",
+    "teamRule": "每隊三位成員",
+    "languages": "C/C++, JAVA, PYTHON, C#",
+    "workshop": "8/24-8/25 競技程式工作坊"
+  },
+  "registration": {
+    "period": "即日起 ~ 115年7月23日 (四) 止",
+    "formLink": "https://docs.google.com/forms/d/e/1FAIpQLScQRCODE_PLACEHOLDER/viewform",
+    "qrCodeUrl": "",
+    "fee": "免費報名",
+    "groups": [
+      {
+        "name": "高中職新星組",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLScQRCODE_PLACEHOLDER/viewform",
+        "status": "開放中"
+      }
+    ]
+  },
+  "contact": {
+    "email": "pu20700@gm.pu.edu.tw",
+    "collegeEmail": "pu20700@gm.pu.edu.tw",
+    "phone": "(04)26328001 轉 18001 , 18007",
+    "address": "43301 台中市沙鹿區台灣大道七段200號",
+    "locationName": "靜宜大學 資訊處 任垣樓 任120",
+    "office": "任垣樓 任120"
+  },
+  "organizers": [
+    {
+      "name": "靜宜大學資訊學院",
+      "logo": "/college_of_computer_and_information.gif"
+    },
+    {
+      "name": "靜宜大學資訊工程學系",
+      "logo": "/provident_university.png"
+    }
+  ],
+  "coOrganizers": [
+    {
+      "name": "靜宜大學資訊管理學系"
+    },
+    {
+      "name": "靜宜大學人工智慧應用學系"
+    },
+    {
+      "name": "靜宜大學資訊處"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "SYSTEX 精誠資訊",
+      "logo": "/systex.png"
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "date": "2026-07-06",
+      "title": "2026 HSPC 網頁正式上線與報名開始",
+      "content": "歡迎全國高中職學生踴躍組隊報名參加！本次活動除了 8/26 正式競賽外，還特別於 8/24 - 8/25 舉辦為期兩天的「競技程式工作坊」，協助參賽選手熟悉解題技巧與競賽環境。",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLScQRCODE_PLACEHOLDER/viewform"
+    },
+    {
+      "id": 2,
+      "date": "2026-07-01",
+      "title": "【重要日程】報名截止於 7/23 (四)",
+      "content": "請注意，線上組隊報名截止時間為 2026年7月23日 (星期四)。請有興趣的同學儘速完成報名表單填寫。",
+      "url": ""
+    }
+  ],
+  "environment": {
+    "os": "Windows 11 / Ubuntu Linux 22.04 LTS Dual Boot",
+    "compilers": [
+      { "name": "C/C++", "detail": "GCC / G++ 13.2.0 (MinGW-w64 / GCC in Linux)" },
+      { "name": "Java", "detail": "OpenJDK 21 (LTS)" },
+      { "name": "Python", "detail": "Python 3.12.x (含 standard libraries)" },
+      { "name": "C#", "detail": ".NET SDK 8.0" }
+    ],
+    "editors": [
+      "Visual Studio Code (已安裝 C/C++, Extension Pack for Java, Python 延伸模組)",
+      "Dev-C++ 6.3 (含 GCC)",
+      "Code::Blocks 20.03",
+      "Eclipse IDE for Java Developers"
+    ],
+    "notes": "競賽平台將採用 PC2 或 DOMjudge 系統進行評測。參賽者僅能使用主辦單位提供之本機開發工具，不得連接外部網路或使用未授權之隨身碟。"
+  },
+  "schedule": [
+    {
+      "date": "8/24 (一) - 8/25 (二)",
+      "title": "競技程式工作坊",
+      "items": [
+        { "time": "09:00 - 12:00", "event": "基礎演算法與資料結構課程" },
+        { "time": "12:00 - 13:30", "event": "午餐與休息時間" },
+        { "time": "13:30 - 16:30", "event": "競賽模擬題解題與上機實作" }
+      ]
+    },
+    {
+      "date": "8/26 (三) 競賽當日",
+      "title": "全國高中職程式設計競賽",
+      "items": [
+        { "time": "08:30 - 09:00", "event": "參賽隊伍報到與座位抽籤" },
+        { "time": "09:00 - 09:30", "event": "開幕典禮 & 競賽規則與環境介紹" },
+        { "time": "09:30 - 10:00", "event": "測試賽 (Trial Session) - 熟悉評測系統與編譯環境" },
+        { "time": "10:00 - 13:00", "event": "正式競賽 (Contest Session) - 3小時上機解題" },
+        { "time": "13:00 - 14:00", "event": "主辦單位提供午餐交流與成績封榜統計" },
+        { "time": "14:00 - 15:00", "event": "競賽題目詳解與解題報告" },
+        { "time": "15:00 - 15:30", "event": "頒獎典禮 (頒發冠、亞、季軍及佳作獎狀與獎金) & 閉幕" }
+      ]
+    }
+  ],
+  "pastProblems": [
+    {
+      "year": "2016",
+      "title": "第六屆 全國私立大專校院程式競賽 2016 考題",
+      "link": "https://drive.google.com/file/d/1MJEUnVoii33Ft3bnZhcekujmOOU7ofN2/view?usp=drive_link"
+    },
+    {
+      "year": "2017",
+      "title": "第七屆 全國私立大專校院程式競賽 2017 考題",
+      "link": "https://drive.google.com/file/d/1MJEUnVoii33Ft3bnZhcekujmOOU7ofN2/view?usp=drive_link"
+    },
+    {
+      "year": "2018",
+      "title": "第八屆 全國私立大專校院程式競賽 2018 考題",
+      "link": "https://drive.google.com/file/d/1s_fKvXhqFrHDpu-1QLaZwB7nOU74x6Zd/view"
+    },
+    {
+      "year": "2019",
+      "title": "第九屆 全國私立大專校院程式競賽 2019 考題",
+      "link": "https://drive.google.com/file/d/1MryDw4Nox6kviEfHw1pFA70G9Zg2xKDM/view"
+    },
+    {
+      "year": "2020",
+      "title": "第十屆 全國私立大專校院程式競賽 2020 考題",
+      "link": "https://drive.google.com/file/d/1NRp0c77uPeltWN1E-hZTGPKrwDNiTOmG/view"
+    },
+    {
+      "year": "2021",
+      "title": "第十一屆 全國私立大專校院程式競賽 2021 考題",
+      "link": "https://drive.google.com/file/d/1oS3GGI8glATSeLrRqKBAfyWNcfDwSHnX/view"
+    },
+    {
+      "year": "2022",
+      "title": "第十二屆 全國私立大專校院程式競賽 2022 考題",
+      "link": "https://drive.google.com/file/d/1zEVVjBsAvXNgyhgZALth5o6M3l5dOEwm/view"
+    },
+    {
+      "year": "2023",
+      "title": "第十三屆 全國私立大專校院程式競賽 2023 考題",
+      "link": "https://drive.google.com/file/d/1S1zG0Smkpvb52VBn67zy-HSBgUx3-t_D/view"
+    },
+    {
+      "year": "2024",
+      "title": "第十四屆 全國私立大專校院程式競賽 2024 考題",
+      "link": "https://drive.google.com/file/d/19WSPjQPFF0tXCylnd9lYumM1W4x3CUPj/view"
+    }
+  ],
+  "faq": []
+}
